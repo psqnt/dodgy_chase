@@ -1,0 +1,11 @@
+{
+  "name": "moving-squares",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "~4.16.1",
+    "mongojs": "^2.5.0",
+    "socket.io": "~2.0.4"
+  },
+  "author": "Joe <joepasquantonio@gmail.com",
+  "description": "a game with moving squares"
+}

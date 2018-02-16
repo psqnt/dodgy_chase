@@ -1,0 +1,11 @@
+html {}
+body {
+  text-align: center;
+  background: #ffffff;
+  font: 14px/21px arial, helvetica, sans-serif;
+}
+
+canvas {
+  border: 1px solid black;
+  background: #eee;
+}
