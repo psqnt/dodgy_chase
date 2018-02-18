@@ -1,18 +1,18 @@
 {
   "name": "dodgy-catch",
   "version": "1.0.0",
+  "description": "a game with moving squares",
   "main": "app.js",
   "dependencies": {
-    "express": "~4.16.1",
-    "socket.io": "~2.0.4"
+    "express": "^4.16.1",
+    "socket.io": "^2.0.4"
   },
   "engines": {
     "node": "8.9.4"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app.js",
+    "start": "node app.js"
   },
-  "author": "Joe <joepasquantonio@gmail.com",
-  "description": "a game with moving squares"
+  "author": "Joe <joepasquantonio@gmail.com"
 }
