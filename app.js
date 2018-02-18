@@ -1,5 +1,5 @@
-var mongojs = require('mongojs');
-var db = mongojs('localhost:27017/myDB', ['account', 'playerStats']);
+//var mongojs = require('mongojs');
+var db = null //mongojs('localhost:27017/myDB', ['account', 'playerStats']);
 
 var express = require('express');
 var app = express();
@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
 });
 app.use('/client', express.static(__dirname + '/client'));
 
-serv.listen(2000);
+serv.listen(process.env.PORT || 2000);
 console.log('server started');
 
 class Ball {
