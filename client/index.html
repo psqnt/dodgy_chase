@@ -8,9 +8,31 @@
   </head>
   <body>
     <div id="header">
-      <h1> Moving Squares </h1>
-    <div id="content">
-      <canvas id="game" width="1024" height="600"></canvas>
+      <h1> Dodgy Chase </h1>
+    <div id="signIn">
+      Name: <input id="signIn-username" type="text"></input>
+      <button id="signIn-signIn">Enter Lobby</button>
+      <!--
+      Password: <input id="signIn-password" type="password"></input>
+      <button id="signIn-signUp">Sign Up</button>
+      -->
+    </div>
+    <div id="lobbyDiv" style="display:none;">
+      <div id="lobby">
+        <h2> Player Lobby </h2>
+      </div>
+      <div id="players">
+      </div>
+      <hr>
+      <button id="findGame">Find Game</button>
+    </div>
+    <div id="gameDiv" style="display:none;">
+      <canvas id="game" width="1024" height="600"></canvas><br>
+      <button id="startGame">Start Game</button>
+      <button id="newGame" style="display:none;">New Game</button>
+      <!--<button id="toLobby">Back to Lobby</button>-->
+    </div>
+    <div id="info">
     </div>
     <div id="footer">
       <p>By Joe Pasquantonio</p>
