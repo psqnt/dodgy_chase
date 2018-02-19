@@ -77,6 +77,7 @@ socket.on('activePlayers', function(data) {
 socket.on('startingGame', function(){
   lobbyDiv.style.display = "none";
   gameDiv.style.display = "inline-block";
+  startButton.style.display= "inline-block";
 });
 
 // Game
