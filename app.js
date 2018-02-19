@@ -427,6 +427,10 @@ io.sockets.on('connection', function(socket) {
   });
 
   socket.on('newGame', function() {
+    for(var i in socketList) {
+      var socket = socketList[i];
+      socket.emit("newGameBegin");
+    }
     resetGame();
   });
 

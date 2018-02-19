@@ -99,6 +99,10 @@ newButton.onclick = function() {
   socket.emit('newGame');
 };
 
+socket.on('newGameBegin', function() {
+  newButton.style.display = "none";
+})
+
 /*
 lobbyButton.onclick = function() {
   gameDiv.style.display = "none";
