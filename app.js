@@ -132,6 +132,7 @@ class Debris {
 class Player {
   constructor(id, name) {
     this.id = id;
+    name = name.replace("<", "&lt;").replace(">", "&gt;"); // XSS vulnerabililty solution
     this.name = name;
     if (playerCount == 1) {
       this.color = "blue";
